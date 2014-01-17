@@ -1,0 +1,60 @@
+#slideshow {
+	position: relative;
+}
+
+
+img {
+	width: 98%; /* 500 / 510 */
+	height: auto;
+}
+
+figure {
+	position: absolute;
+	width: 85%; /* 510/600 */
+	display: none;
+}
+
+div :first-child {
+	display: block;
+}
+
+.forward, .backward {
+	position: absolute;
+}
+
+/* computers */
+@media only screen and (min-width : 800px) {
+	#slideshow {
+		width: 600px;
+	}
+
+
+	.backward {
+		top: 90px; 
+	}
+
+	.forward {
+		top: 90px;
+		right: 22px;
+
+	}
+}
+
+/* Phones */
+@media only screen and (max-width : 799px) {
+	#slideshow {
+		width: 300px;
+	}
+
+
+	.backward {
+		top: 60px;
+	}
+
+	.forward {
+		top: 60px;
+		right: -27px;
+
+	}
+}
+
